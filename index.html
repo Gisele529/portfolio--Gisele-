@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Profissional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Gisele</div>
+            <button class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon" id="themeIcon"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <div class="container">
+                <div class="hero">
+                    <img src="https://via.placeholder.com/250" alt="Foto de perfil" class="hero-image">
+                    <div class="hero-content">
+                        <h1>Olá, eu sou Gisele</h1>
+                        <p class="subtitle">Bem-vinda ao meu portfólio profissional</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-whatsapp"></i></a>
+                            <a href="#"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contato -->
+                <div class="contact-form">
+                    <h2 class="section-title">Informações de Contato</h2>
+                    <div class="form-group">
+                        <label><i class="fas fa-user"></i> Nome Completo</label>
+                        <input type="text" value="Gisele Campos" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> E-mail</label>
+                        <input type="email" value="gisele@email.com" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" value="(11) 99999-9999" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-map-marker-alt"></i> Localização</label>
+                        <input type="text" value="Araraquara, São Paulo" readonly>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Experiência -->
+                <h2 class="section-title">Experiência Profissional</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><i class="fas fa-shopping-bag"></i> Vendedora</h3>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><i class="fas fa-industry"></i> Ajudante de Produção</h3>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><i class="fas fa-clipboard-check"></i> Controle de Qualidade</h3>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Qualificações -->
+                <h2 class="section-title">Qualificações</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><i class="fas fa-dog"></i> Curso de Banho e Tosa</h3>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><i class="fas fa-tooth"></i> Auxiliar Bucal</h3>
+                    </div>
+
+                    <div class="project-card">
+                        <h3><i class="fas fa-laptop-code"></i> Técnico em Informática</h3>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Formação -->
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3><i class="fas fa-graduation-cap"></i> Ensino Médio Completo</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gisele Campos — Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleTheme() {
+            const html = document.documentElement;
+            const icon = document.getElementById("themeIcon");
+            const dark = html.getAttribute("data-theme") === "dark";
+            if (dark) {
+                html.removeAttribute("data-theme");
+                icon.className = "fas fa-moon";
+            } else {
+                html.setAttribute("data-theme", "dark");
+                icon.className = "fas fa-sun";
+            }
+        }
+    </script>
+</body>
+</html>
